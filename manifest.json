@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "Questrade Real Time Quote",
+    "browser_specific_settings": {
+        "gecko": {
+          "id": "questrade-real-time-quote@elijahlopez.com",
+          "strict_min_version": "42.0"
+        }
+      },
+    "version": "1.0",
+    "description": "Questrade Real Time Quote automatically clicks the refresh quote in Questrade every second.",
+    "icons": {
+        "48": "icons/icon.svg",
+        "96": "icons/icon.svg"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://my.questrade.com/*"
+            ],
+            "js": [
+                "background.js"
+            ]
+        }
+    ]
+}
