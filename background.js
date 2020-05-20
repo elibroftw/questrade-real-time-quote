@@ -9,10 +9,15 @@ function clickBtns() {
         btn.click();
     });
     if (document.hasFocus()) {
-        window.setTimeout(clickBtns, MS_DELAY);
+        if (typeof browser !== "undefined") {
+            window.setTimeout(clickBtns, MS_DELAY);
+        } else {
+            setTimeout(clickBtns, MS_DELAY);
+        }
+        
     } else {
         document.onfocus = clickBtns;
-    }   
+    }
 }
 
 
