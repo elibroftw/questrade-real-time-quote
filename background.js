@@ -14,7 +14,6 @@ function clickBtns() {
         } else {
             setTimeout(clickBtns, MS_DELAY);
         }
-        
     } else {
         document.onfocus = clickBtns;
     }
