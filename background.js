@@ -8,15 +8,10 @@ function clickBtns() {
     for (const btn of btns) {
         btn.click();
     }
-    
     if (document.hasFocus()) {
-        if (typeof browser !== "undefined") {
-            window.setTimeout(clickBtns, MS_DELAY);
-        } else {
-            setTimeout(clickBtns, MS_DELAY);
-        }
+        window.setTimeout(clickBtns, MS_DELAY);
     } else {
-        document.onfocus = clickBtns;
+        window.onfocus = clickBtns;
     }
 }
 
