@@ -7,7 +7,7 @@
           "strict_min_version": "42.0"
         }
       },
-    "version": "1.1",
+    "version": "1.2",
     "description": "Questrade Real Time Quote automatically clicks the refresh quote in Questrade every second.",
     "icons": {
         "48": "icons/icon.svg",
